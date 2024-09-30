@@ -1,3 +1,4 @@
+import { db } from "../data/db";
 import { CartItem, Guitar } from "../types";
 
 export type CartActions = 
@@ -12,7 +13,7 @@ export type CartState = {
     cart: CartItem[]
 }
 
-const initialState: CartState = {
+export const initialState: CartState = {
     data: db,
     cart: []
 }
